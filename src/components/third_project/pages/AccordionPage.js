@@ -1,4 +1,4 @@
-import Accordion from "./atoms/Accordion"
+import Accordion from "../atoms/Accordion"
 export default function AccordionPage() {
   const items = [
     {

@@ -1,6 +1,4 @@
 import classNames from "classnames";
-
-
 function Button({
   children,
   primary,

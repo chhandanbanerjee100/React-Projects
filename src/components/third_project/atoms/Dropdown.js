@@ -5,10 +5,7 @@ function Dropdown({ options, selection, onSelect }) {
   const [isOpen, setIsOpen] = useState(false);
   const divEl = useRef();
   useEffect(() => {
-    // console.log("Inside Use Effect");
     const handler = (event) => {
-      // console.log(event.target)
-      console.log(divEl.current, event.target);
       if(!divEl.current.contains(event.target)){
         setIsOpen(false);
       }
@@ -19,7 +16,6 @@ function Dropdown({ options, selection, onSelect }) {
     };
   })
   const handleClick = () => {
-    // setIsOpen(!isOpen);
     setIsOpen((currentIsOpen) => !currentIsOpen);
   }
 

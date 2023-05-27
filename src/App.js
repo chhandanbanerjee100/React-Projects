@@ -1,16 +1,30 @@
 import './App.css';
 
-// import { useState } from 'react';
-// import Api_Project from './components/api-project/Api_Project';
-// import BookProject from './components/books-project/BookProject';
-import Index from './components/third_project/Index';
+import Sidebar  from './components/third_project/atoms/Sidebar';
+import Route from './components/third_project/atoms/Route';
+import AccordionPage from './components/third_project/pages/AccordionPage';
+import DropdownPage from './components/third_project/pages/DropdownPage';
+import ButtonPage from './components/third_project/pages/ButtonPage';
 
 function App() {
   return (
-    <div className='text-2xl'>
+    <div className='text-2xl container mx-auto grid grid-cols-6 gap-4 mt-4'>
       {/* <Api_Project /> */}
       {/* <BookProject /> */}
-      <Index />
+      {/* <Index /> */}
+      <Sidebar />
+
+      <div className='col-span-5'>
+        <Route path="/accordion">
+          <AccordionPage />
+        </Route>
+        <Route path="/dropdown">
+          <DropdownPage />
+        </Route>
+        <Route path="/buttons">
+          <ButtonPage />
+        </Route>
+      </div>
     </div>
   );
 }
