@@ -5,6 +5,7 @@ import Route from './components/third_project/atoms/Route';
 import AccordionPage from './components/third_project/pages/AccordionPage';
 import DropdownPage from './components/third_project/pages/DropdownPage';
 import ButtonPage from './components/third_project/pages/ButtonPage';
+import ModalPage from './components/third_project/pages/ModalPage';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route path="/buttons">
           <ButtonPage />
+        </Route>
+        <Route path="/modal">
+          <ModalPage />
         </Route>
       </div>
     </div>
