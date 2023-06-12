@@ -1,9 +1,12 @@
 import MoviePlaylist from "./atoms/MoviePlaylist";
 import SongPlaylist from "./atoms/SongPlaylist";
 import Button from "../third_project/atoms/Button";
+import { useDispatch } from "react-redux";
+import { reset } from "./store/Index";
 function Index() {
+  const dispatch = useDispatch();
   const handleResetClick = () => {
-    //
+    dispatch(reset());
   };
 
   return (
