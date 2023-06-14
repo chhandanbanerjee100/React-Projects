@@ -4,8 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import { NavigationProvider } from './components/third_project/context/navigation';
-import { store } from "./components/redux/store/Index";
+// import { store } from "./components/redux/store/Index";
 import { Provider } from 'react-redux';
+import { store } from './components/redux-II/store/Index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
