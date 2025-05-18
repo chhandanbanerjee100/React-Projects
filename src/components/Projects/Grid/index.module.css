@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grid {
+  display: grid;
+  max-width: 300px;
+  padding: 20px;
+  width: 100%;
+  gap: 20px;
+  border: 1px solid red;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+  border: 1px solid black;
+  padding-bottom: 100%;
+}
+
+.itemActivated {
+  border: 1px solid black;
+  height: 0;
+  padding-bottom: 100%;
+  background-color: green;
+}
