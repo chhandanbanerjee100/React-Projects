@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.reset-button {
+  background-color: antiquewhite;
+  padding: 5px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.cell {
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+  font-size: 300%;
+}
+
+.board {
+  margin-top: 50px;
+  display: grid;
+  border: 1px solid black;
+}
